@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>layout 1</title>
+    <link rel="stylesheet" href="./stylesheets/styles.css">
+  </head>
+  <body>
+    <div id="root" class="root">
+      
+    </div>
+      <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+      <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+      <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+      <script type="text/babel">
+
+
+      let Header = () => {
+        return (
+          <div class="box header">Header</div>
+        )
+      }
+      let Sidebar = () => {
+        return (
+          <div class="box sidebar">Sidebar</div>
+        )
+      }
+      let Content = () => {
+        return (
+          <div class="box content">Content
+            <br /> More content than we had before so this column is now quite tall.
+          </div>
+        )
+      }
+      
+                
+      let Footer = () => {
+        return (
+          <div class="box footer">Footer</div>
+        )
+      }
+
+        let Layout = () => {
+          return (
+            <div class="wrapper">
+              <Header />
+              <Sidebar />
+              <Content />
+              <Footer />
+            </div>
+            
+            
+          )
+          
+        };
+        ReactDOM.render(<Layout />,document.getElementById("root"));
+
+      </script>
+    
+  </body>
+</html>
